@@ -10,34 +10,411 @@
     <title>Boolean Dashboard</title>
 </head>
 <body>
-    <nav class="container-fluid row py-3 px-0 mx-0 align-items-center">
-      <a href="#" class="col-1">
-        <div>
-          <img src="img/logo.svg" alt="logo" class="d-none d-xxl-block w-100">
-          <img src="img/mobile-logo.png" alt="logo_mobile" class="d-xxl-none w-100">
+    
+  <!-- <div class="container-fluid position-fixed p-0 z-1 fixed-top">
+    <nav class="container-fluid py-3 px-0 mx-0 ms_bg_nav">
+      <div class="row w-100 align-items-center bg-white mx-0">
+        <a href="#" class="col-1">
+          <div>
+            <img src="img/logo.svg" alt="logo" class="d-none d-xxl-block w-100">
+            <img src="img/mobile-logo.png" alt="logo_mobile" class="d-xxl-none w-100">
+          </div>
+        </a>
+        <form class="d-flex col-10 rounded p-0 ms_bg_grey" role="search">
+          <button class="btn p-0"><i class="bi bi-search p-2"></i></button>
+          <input class="form-control border-0 px-0 ms_bg_grey" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+        </form>
+        <div class="col-1">
+          <div class="row">
+            <a href="#" class="d-none d-xxl-block col-3 ms_grey">
+              <i class="bi bi-list-ul"></i>
+            </a>
+            <a href="#" class="d-none d-xxl-block col-3 ms_grey">
+              <i class="bi bi-question-circle-fill"></i>
+            </a>
+            <a href="#" class="d-none d-xxl-block col-3 ms_grey">
+              <i class="bi bi-three-dots-vertical"></i>
+            </a>
+            <a href="#" class="col-3 link-warning">
+              <i class="bi bi-bell-fill"></i>
+            </a>
+          </div>
+        </div>  
+      </div>
+    </nav>
+
+    
+  </div> -->
+  
+  
+  
+  <main class="row">
+    <div class="row position-fixed w-100 ms_main">
+      <div class="col-1 ms_bg_utility min-vh-100 ms_bg_grazia">
+        <div class="d-flex flex-row pt-3">
+          <a href="#" class="d-flex">
+            <i class="bi bi-house-door-fill"></i>
+            <span class="d-none d-xxl-block">Home</span>
+          </a>
         </div>
-      </a>
-      <form class="d-flex col-10 rounded p-0 ms_bg_grey" role="search">
-        <button class="btn p-0"><i class="bi bi-search p-2"></i></button>
-        <input class="form-control border-0 ms_bg_grey" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-      </form>
-      <div class="col-1">
-        <div class="row">
-          <a href="#" class="d-none d-xxl-block col-3 ms_grey">
-            <i class="bi bi-list-ul"></i>
+        <div class="d-flex flex-row py-2">
+          <a href="#" class="d-flex">
+            <i class="bi bi-bar-chart-line-fill"></i>
+            <span class="d-none d-xxl-block">Stats</span>
           </a>
-          <a href="#" class="d-none d-xxl-block col-3 ms_grey">
-            <i class="bi bi-question-circle-fill"></i>
+        </div>
+        <div class="d-flex flex-row">
+          <a href="#" class="d-flex">
+            <i class="bi bi-reception-4"></i>
+            <span class="d-none d-xxl-block">Signals</span>
           </a>
-          <a href="#" class="d-none d-xxl-block col-3 ms_grey">
-            <i class="bi bi-three-dots-vertical"></i>
-          </a>
-          <a href="#" class="col-3 link-warning">
-            <i class="bi bi-bell-fill"></i>
+        </div>
+        <div class="d-flex align-self-bottom ms_admin">
+          <a href="#" class="d-flex">
+            <i class="bi bi-gear-fill"></i>
+            <span class="d-none d-xxl-block">Admin</span>
           </a>
         </div>
       </div>
-    </nav>
+      <!-- <div>
+        <div>
+          <a href="#" class="d-flex align-bottom">
+            <i class="bi bi-gear-fill"></i>
+            <span class="d-none d-xxl-block">Admin</span>
+          </a>
+        </div>
+      </div> -->
+    </div>
+    <!-------------------------------- Linea blu elevata -------------------------------->
+    <section class="col-11 row position-absolute w-100 bg-primary ms_main ms_main_main">
+      <div>
+        aaaaaaaaaaaaaaaaaa
+      </div>
+    </section>
+    <!-------------------------------- Linea blu elevata -------------------------------->
+
+    <!-------------------------------- Card delle prossime classi -------------------------------->
+    <section class="card offset-1 col-8" id="ms_prossime_classi">
+      <div class="card-header">
+        Prossime classi
+      </div>
+      <div class="p-2">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              Nome
+            </div>
+            <div class="col-1 text-center">
+              Data inizio
+            </div>
+            <div class="col-1 text-center">
+              ROI
+            </div>
+            <div class="col-1 text-center text-center">
+              Status
+            </div>
+            <div class="col-1 text-center">
+              Azioni
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 75
+            </div>
+            <div class="col-1 text-center">
+              15 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-success w-auto">
+                Done
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 76
+            </div>
+            <div class="col-1 text-center">
+              16 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-success w-auto">
+                Done
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 77
+            </div>
+            <div class="col-1 text-center">
+              17 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-warning w-auto">
+                Progress
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 78
+            </div>
+            <div class="col-1 text-center">
+              18 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-success w-auto">
+                Done
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 79
+            </div>
+            <div class="col-1 text-center">
+              19 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-danger">
+                Failed
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 80
+            </div>
+            <div class="col-1 text-center">
+              20 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-success w-auto">
+                Done
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 81
+            </div>
+            <div class="col-1 text-center">
+              21 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-danger">
+                Failed
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+          <li class="list-group-item d-flex">
+            <div class="col-8">
+              <img src="img/class-avatar.jpg" alt="">
+              classe 82
+            </div>
+            <div class="col-1 text-center">
+              22 Feb 2021
+            </div>
+            <div class="col-1 text-center">
+              20%
+            </div>
+            <div class="col-1 text-center">
+              <div class="badge bg-success w-auto">
+                Done
+              </div>
+            </div>
+            <div class="col-1 text-center">
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-pencil-fill"></i>
+              </button>
+              <button class="rounded border-1 bg-white text-secondary">
+                <i class="bi bi-trash3-fill"></i>
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+    <!-------------------------------- Card delle prossime classi -------------------------------->
+
+    <!-------------------------------- TODO -------------------------------->
+    <section class="card col-3 h-auto">
+      <div class="card-header">
+        Todo
+      </div>
+      <div class="card m-3 p-3">
+        <ul class="list-group list-group-flush">
+          <li class="form-check list-group-item">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Kickoff nuove classi
+            </label>
+          </li>
+          <li class="form-check list-group-item">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Lezione su Bootstrap 5 in classe #75
+            </label>
+          </li>
+          <li class="form-check list-group-item">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Controllare username github studenti
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    
+    <!-------------------------------- TODO -------------------------------->
+
+    <!-------------------------------- FAQ -------------------------------->
+    <section class="card offset-1 col-8">
+      <div class="card-header">
+        F.A.Q.
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Come aggiungere un nuovo studente?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">clicca sul + in alto nella sezione blu.*</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Come posso accedere alle informazioni del mio account?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Clicca sull'icona della campanella.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Posso usare questa dashboard da mobile?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Ovvio, è fatto apposta.</div>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------- FAQ -------------------------------->
+
+    <!-------------------------------- GRAFICO -------------------------------->
+    <section class="card col-3">
+      <div class="card" style="width: 18rem;">
+        <img src="img/stats.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Utenti attivi</h5>
+          <p class="card-text">Lista degli utenti attiivi in piattaforma nell'ultimo mese.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Gennaio: 1200</li>
+          <li class="list-group-item">Febbraio: 800</li>
+          <li class="list-group-item">Marzo: 1500</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Visualizza report approfondito</a>
+        </div>
+      </div>
+    </section>
+    <!-------------------------------- GRAFICO -------------------------------->
+  </main>
+    
 
 
 

@@ -8,3 +8,34 @@
 .ms_bg_nav{
     background-color: rgb(248,249,250);
 }
+.ms_admin{
+    /* margin-top: 100%;
+    margin-bottom: -100%; */
+}
+.ms_bg_utility{
+    /* background-color: rgb(5, 30, 52); */
+    background-color: green;
+}
+.ms_bg_grazia{
+    background-image: url(../img/sidebar-bg.png);
+}
+.ms_navigation_bar{
+    
+}
+.ms_zona_sopra{
+    position: fixed;
+   left: 127px;
+    top: 70px;
+}
+.ms_offset_top{
+    margin-top: calc((100% / 16) * 1);
+}
+.ms_main{
+    top: 7%;
+}
+.ms_main_main{
+    left:100px;
+}
+#ms_prossime_classi img{
+    width: 1.5em;
+}
